@@ -1,19 +1,20 @@
-head.ready(function() {
+$(document).ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	// click
+	$('body').on('click', function() {
+		$(this).removeClass('is-open-menu');
+	});
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
-
-	console.log($('body').html());
+	// menu
+	$('.js-btn-menu').on('click', function(event) {
+		event.stopPropagation();
+		var body = $('body');
+		if (body.hasClass('is-open-menu')) {
+			body.removeClass('is-open-menu');
+		}
+		else {
+			body.addClass('is-open-menu');
+		}
+	});
+	
 });

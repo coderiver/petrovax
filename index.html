@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="http://petrovax.ru/bitrix/templates/.default/js/blueberry/jquery.blueberry.js?1332748625"></script>
 	<script type="text/javascript" src="http://petrovax.ru/bitrix/templates/.default/js/init.js?1421680030"></script>
 	<script type="text/javascript" src="http://petrovax.ru/bitrix/templates/petrovax_index/js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
  </head>
 
@@ -36,28 +37,56 @@
 			<a href="/feedback/">Обратная связь</a>
 			<a href="/about/contacts/">Контакты</a>
 		</p>
-<form class="search" action="/search/index.php">	
-	<input class="in" name="q" type="text" value="" placeholder="Поиск" >
-</form>
-<p class="lang">
-				<a href="http://petrovax.com/" title="En">En</a>
-						<a class="ac" title="Ru">Ru</a>
-			</p>
-                <div class="h_menu">
-                      <table>
-                           <tr>
-								<td><div><a href="/about/" class="expand">
-					<b>О компании</b>					</a>						<ul>
-							<li><a href="/about/today/">Петровакс Фарм сегодня</a></li>
+		<form class="search" action="/search/index.php">	
+			<input class="in" name="q" type="text" value="" placeholder="Поиск" >
+		</form>
+		<p class="lang">
+			<a href="http://petrovax.com/" title="En">En</a>
+			<a class="ac" title="Ru">Ru</a>
+		</p>
+		<button class="btn-munu js-btn-menu">
+			<svg version="1.1" width="44" height="33" class="btn-munu__ico" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 34 34" 
+				enable-background="new 0 0 34 34"
+				xml:space="preserve">
+				<g>
+					<g>
+						<rect y="23" fill="#444" width="24" height="3"/>
+					</g>
+					<g>
+						<rect y="13" fill="#444" width="24" height="3"/>
+					</g>
+					<g>
+						<rect y="3" fill="#444" width="24" height="3"/>
+					</g>
+				</g>
+			</svg>
+		</button>
+        <div class="h_menu">
+            <table>
+                <tr>
+					<td>
+						<div>
+							<a href="/about/" class="expand">
+								<b>О компании</b>
+							</a>
+							<ul>
+								<li><a href="/about/today/">Петровакс Фарм сегодня</a></li>
 								<li><a href="/about/history/">История</a></li>
 								<li><a href="/about/quality/">Качество</a></li>
 								<li><a href="/about/production/">Производство</a></li>
 								<li><a href="/about/team/">Команда</a></li>
 								<li><a href="/about/partners/">Партнеры</a></li>
-								<li><a href="/about/responsibility/">Корпоративная социальная ответственность</a></li>
-								<li><a href="/about/contacts/">Контакты</a></li>
-													</ul>
-									</div></td>
+								<li>
+									<a href="/about/responsibility/">Корпоративная социальная ответственность</a>
+								</li>
+								<li>
+									<a href="/about/contacts/">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</td>
 							<td><div><a href="/researchs/" class="expand">
 					<b>Исследования и разработки</b>					</a>						<ul>
 							<li><a href="/researchs/platforms/">Технологические платформы</a></li>
