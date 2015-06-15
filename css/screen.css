@@ -35,10 +35,10 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .gal_menu a:first-child { margin-right: 9px; }
   .c_ul_txt { padding: 0 0 28px 0; }
   .c_ul_txt > li:nth-child(2) { margin-top: 62px; width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; }
-  .c_ul_txt > li:nth-child(2) .gal_menu { margin: 0 20px 15px 0; order: 1; width: 218px; }
-  .c_ul_txt > li:nth-child(2) .tab_content { order: 3; width: 218px; }
-  .c_ul_txt > li:nth-child(2) h6 { margin-bottom: 15px; order: 2; height: 31px; width: 66%; }
-  .c_ul_txt > li:nth-child(2) .c_news { margin-left: 18px; order: 4; width: 66%; }
+  .c_ul_txt > li:nth-child(2) .gal_menu { margin: 0 20px 15px 0; -webkit-order: 1; order: 1; width: 218px; }
+  .c_ul_txt > li:nth-child(2) .tab_content { -webkit-order: 3; order: 3; width: 218px; }
+  .c_ul_txt > li:nth-child(2) h6 { margin-bottom: 15px; -webkit-order: 2; order: 2; height: 31px; width: 66%; }
+  .c_ul_txt > li:nth-child(2) .c_news { margin-left: 18px; -webkit-order: 4; order: 4; width: 66%; }
   .c_ul_txt li { letter-spacing: -0.2px; }
   .c_ul_txt li .c_txt_1 { background-position-x: 228px; }
   .c_ul_txt li .c_txt_1 > li:nth-child(2) { margin-left: 8px; }
@@ -66,8 +66,39 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .f_menu a:first-child { margin-left: 0; }
   .create { padding: 0; top: 15px; right: 0; width: 160px; }
   .copy_r { width: 160px; } }
-@media only screen and (max-width: 767px) { .head { height: 166px; }
+@media only screen and (max-width: 767px) { .logo { margin-left: 12px; }
+  .head { height: 166px; }
+  .h_menu { right: auto; left: 0; top: 70px; }
+  .h_menu table td a { text-align: left; }
   .whi_mainbanner, .search { display: none; }
-  .h_link { top: 96px; right: 85px; }
-  .lang { top: 27px; right: 19px; }
-  .btn-munu { top: 87px; left: 20px; right: auto; } }
+  .h_link { top: 96px; right: 92px; }
+  .lang { top: 27px; right: 27px; }
+  .btn-munu { top: 87px; left: 31px; right: auto; }
+  .center { padding: 0 12px 92px; }
+  .center h6 { margin-bottom: 15px; font-size: 12px; }
+  .center h3 { padding: 0; margin: 15px 0; }
+  .center .c_ul_txt li .c_txt_1 li.f h3 { padding: 0; margin: 0 0 15px; }
+  .c_ul_txt { padding: 0; }
+  .c_ul_txt > li:nth-child(2) { margin-top: 35px; }
+  .c_ul_txt > li:nth-child(2) .gal_menu { margin: 0; -webkit-order: 1; order: 1; width: 100%; }
+  .c_ul_txt > li:nth-child(2) .tab_content { margin-top: 11px; order: 2; -webkit-order: 2; width: 100%; }
+  .c_ul_txt > li:nth-child(2) h6 { margin-bottom: 0; order: 3; -webkit-order: 3; height: 31px; width: 100%; }
+  .c_ul_txt > li:nth-child(2) .c_news { margin: 14px 0 25px; order: 4; -webkit-order: 4; width: 100%; }
+  .c_ul_txt li .c_txt_1 { background: none; }
+  .c_ul_txt li:first-child { float: none; margin: 0; width: 100%; }
+  .c_ul_txt li .c_txt_1 > li, .c_ul_txt li .c_txt_1 > li.f, .c_ul_txt li .c_txt_1 > li:nth-child(2) { margin: 0; width: 100% !important; float: none; display: block; }
+  .c_ul_txt li .c_txt_1 > li { margin-bottom: 20px; }
+  .c_ul_txt li .c_txt_1 > li img { margin: 15px 0; }
+  .c_ul_txt li .c_txt_1 li ul li, .c_ul_txt li .c_txt_1 li ul li:first-child { float: none; padding: 0; margin: 0; overflow: visible; width: 100%; display: block; }
+  .c_ul_txt li .c_txt_1 li ul li:first-child img { margin-top: 5px; }
+  .c_ul_txt li .c_txt_1 li ul li img { margin: 15px 0; float: none; width: 100%; }
+  .list_drg li, .list_drg .list_drg li:first-child { width: 100%; margin-left: 0; }
+  .footer { padding: 15px 12px 30px; height: auto; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; }
+  .footer * { float: none; }
+  .footer:before, .footer:after { display: none; }
+  .footer .create { -webkit-order: 4; order: 4; line-height: 1.4; }
+  .footer .copy_r { -webkit-order: 3; order: 3; line-height: 1.4; }
+  .footer .f_menu { -webkit-order: 1; order: 1; line-height: 1.4; }
+  .footer .f_menu a { margin-left: 4px; }
+  .footer .f_menu a:first-child { margin-left: 0; }
+  .footer .warning { margin: 18px 0; order: 2; -webkit-order: 2; } }
