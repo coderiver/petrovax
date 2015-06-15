@@ -95,12 +95,15 @@ body
 +r(960)
 	body
 		overflow-x: hidden
+	img
+		width: 100%
 	.head,
 	.center
 		max-width: 700px
 	.head
+		margin-bottom: 0
 		padding: 20px 0 0 
-		height: 120px
+		height: 77px
 	.btn-munu
 		display: block
 	.h_menu
@@ -313,6 +316,8 @@ body
 		margin: 0 auto
 		width: auto
 		max-width: 700px
+		.center_col
+			width: 100%
 	.l_menu
 		position: absolute
 		top: 100%
@@ -320,10 +325,12 @@ body
 		right: 0
 		padding: 5px
 		width: auto
-		background: #fff
+		z-index: 2
+		float: none
 		border: 1px solid #ccc
 		border-top: none
 		+border-radius(0 0 6px 6px)
+		background: #fff
 		display: none
 	.drop
 		position: relative
@@ -375,11 +382,35 @@ body
 			margin: 10px 0
 	.center_col ul.tab_headers li+li
 		margin-left: 3px
+	.par_carusel div
+		width: auto !important
+	.par_carusel
+		+box
+	.par_carusel ul li
+		margin: 0 50px 0 30px
+	.person-card
+		margin-top: 10px
+		width: 195px
+		img
+			width: 100%
+	.team
+		margin-top: 10px
+	.prod_inf
+		margin-top: 8px
+		width: 100%
+	.right_cont
+		float: none
+		width: 100%
+	.prod_inf .tab_content
+		margin-bottom: 20px
+	.p_img
+		height: auto
 
 +r(767)
 	.head
 		padding-top: 12px
-		height: 166px
+		height: 120px
+		+clr
 		.logo
 			margin-left: 12px
 	.h_menu
@@ -518,8 +549,8 @@ body
 		float: none
 		h1
 			padding: 10px 0 15px
-	.head_h .hi_c
-		background-size: cover
+	.head_h 
+		display: none
 	.center_col ul.tab_headers li
 		margin-top: 5px
 		float: none
@@ -534,15 +565,47 @@ body
 		img
 			width: 100%
 			display: block
+	.partner_all1
+		float: none
+	.par_carusel ul li
+		margin: 0
 
-
-
-
-
-
-
-
-
+	.person-card
+		float: none
+		width: 100%
+	.team
+		float: none
+		margin-right: 0
+		width: 100%
+	.center_col ul.team li
+		float: none
+		padding: 0 0 5px 0
+		width: 100%
+		text-align: center
+		height: auto
+		img
+			float: none
+	.prod_inf 
+		.tab_content
+			width: 100%
+		.p_img
+			margin: 0 0 17px 
+			padding: 9px
+			height: auto
+			background-size: cover
+			+box
+	.prod_inf .pinf_menu a
+		margin: 0
+		font-size: 13px
+		b
+			padding: 0 5px
+	.fancybox-outer
+		+box
+	.fancybox-wrap
+		right: 20px
+		width: auto !important
+	.fancybox-inner
+		width: 100% !important
 
 
 

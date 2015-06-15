@@ -14,8 +14,9 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .footer { max-width: 820px; }
   .warning { max-width: 818px; } }
 @media only screen and (max-width: 960px) { body { overflow-x: hidden; }
+  img { width: 100%; }
   .head, .center { max-width: 700px; }
-  .head { padding: 20px 0 0; height: 120px; }
+  .head { margin-bottom: 0; padding: 20px 0 0; height: 77px; }
   .btn-munu { display: block; }
   .h_menu { position: absolute; top: 30px; right: -8px; padding: 62px 15px 20px; width: 176px; height: auto; background: #173885; border: none; box-shadow: 0 5px 16px rgba(7, 36, 106, 0.66); display: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .h_menu table td { padding: 8px 0; height: auto; border: none; font-size: 11px; white-space: normal; display: block; }
@@ -70,7 +71,8 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .create { padding: 0; top: 15px; right: 0; width: 160px; }
   .copy_r { width: 160px; }
   .global { margin: 0 auto; width: auto; max-width: 700px; }
-  .l_menu { position: absolute; top: 100%; left: 0; right: 0; padding: 5px; width: auto; background: white; border: 1px solid #cccccc; border-top: none; -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0; border-radius: 0 0 6px 6px; display: none; }
+  .global .center_col { width: 100%; }
+  .l_menu { position: absolute; top: 100%; left: 0; right: 0; padding: 5px; width: auto; z-index: 2; float: none; border: 1px solid #cccccc; border-top: none; -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0; border-radius: 0 0 6px 6px; background: white; display: none; }
   .drop { position: relative; margin-bottom: 10px; display: block; }
   .drop.is-open .l_menu { display: block; }
   .drop.is-open .drop__text { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px; border-radius: 6px 6px 0 0; }
@@ -83,8 +85,19 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .breadcrumb-navigation { display: none; }
   .center_col { width: auto; }
   .center_col ul.tab_headers { padding: 0; margin: 10px 0; }
-  .center_col ul.tab_headers li + li { margin-left: 3px; } }
-@media only screen and (max-width: 767px) { .head { padding-top: 12px; height: 166px; }
+  .center_col ul.tab_headers li + li { margin-left: 3px; }
+  .par_carusel div { width: auto !important; }
+  .par_carusel { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .par_carusel ul li { margin: 0 50px 0 30px; }
+  .person-card { margin-top: 10px; width: 195px; }
+  .person-card img { width: 100%; }
+  .team { margin-top: 10px; }
+  .prod_inf { margin-top: 8px; width: 100%; }
+  .right_cont { float: none; width: 100%; }
+  .prod_inf .tab_content { margin-bottom: 20px; }
+  .p_img { height: auto; } }
+@media only screen and (max-width: 767px) { .head { padding-top: 12px; height: 120px; *zoom: 1; }
+  .head:after { content: " "; display: table; clear: both; }
   .head .logo { margin-left: 12px; }
   .h_menu { right: auto; left: 0; top: 70px; }
   .h_menu table td a { text-align: left; }
@@ -123,8 +136,21 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .global { padding: 0 15px; }
   .center_col { float: none; }
   .center_col h1 { padding: 10px 0 15px; }
-  .head_h .hi_c { background-size: cover; }
+  .head_h { display: none; }
   .center_col ul.tab_headers li { margin-top: 5px; float: none; display: block; }
   .center_col ul.tab_headers li:first-child { margin-top: 0; }
   table td, table.white td { padding: 0; display: block; }
-  table img, table.white img { width: 100%; display: block; } }
+  table img, table.white img { width: 100%; display: block; }
+  .partner_all1 { float: none; }
+  .par_carusel ul li { margin: 0; }
+  .person-card { float: none; width: 100%; }
+  .team { float: none; margin-right: 0; width: 100%; }
+  .center_col ul.team li { float: none; padding: 0 0 5px 0; width: 100%; text-align: center; height: auto; }
+  .center_col ul.team li img { float: none; }
+  .prod_inf .tab_content { width: 100%; }
+  .prod_inf .p_img { margin: 0 0 17px; padding: 9px; height: auto; background-size: cover; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .prod_inf .pinf_menu a { margin: 0; font-size: 13px; }
+  .prod_inf .pinf_menu a b { padding: 0 5px; }
+  .fancybox-outer { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .fancybox-wrap { right: 20px; width: auto !important; }
+  .fancybox-inner { width: 100% !important; } }

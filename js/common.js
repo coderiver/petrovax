@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	function lMenu() {
 		var menu = $('.l_menu'),
-			active = $('.l_menu').find('a.ac').text();
+			active = $('.l_menu').find('a.ac').eq(0).text();
 
 		if ($(window).width() < 960) {
 			menu.wrapAll("<div class='drop'></div>");
