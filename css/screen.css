@@ -6,6 +6,8 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
 .btn-munu:focus { outline: none; }
 .btn-munu .btn-munu__ico { margin-left: -11px; }
 
+.drop { display: none; }
+
 @media only screen and (max-width: 1024px) { .head, .center, .footer, .warning { width: auto; }
   .head { max-width: 942px; }
   .center { max-width: 940px; }
@@ -62,18 +64,34 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .footer:before { position: absolute; content: ""; top: 0; left: -500px; right: 100%; bottom: 0; height: 102px; background: #2555a5 url(images/bg3.gif) repeat-x; background-size: 100%; }
   .footer:after { position: absolute; content: ""; top: 0; right: -500px; left: 100%; bottom: 0; height: 102px; background: #2555a5 url(images/bg3.gif) repeat-x; background-size: 100%; }
   .footer .warning { height: auto; font-size: 11px; color: white; }
+  .footer .warning p { margin: 0; }
   .f_menu a { margin: 0 0 0 29px; }
   .f_menu a:first-child { margin-left: 0; }
   .create { padding: 0; top: 15px; right: 0; width: 160px; }
-  .copy_r { width: 160px; } }
-@media only screen and (max-width: 767px) { .logo { margin-left: 12px; }
-  .head { height: 166px; }
+  .copy_r { width: 160px; }
+  .global { margin: 0 auto; width: auto; max-width: 700px; }
+  .l_menu { position: absolute; top: 100%; left: 0; right: 0; padding: 5px; width: auto; background: white; border: 1px solid #cccccc; border-top: none; -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0; border-radius: 0 0 6px 6px; display: none; }
+  .drop { position: relative; margin-bottom: 10px; display: block; }
+  .drop.is-open .l_menu { display: block; }
+  .drop.is-open .drop__text { -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px; border-radius: 6px 6px 0 0; }
+  .drop.is-open .drop__text:before { margin-top: -2px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  .drop .drop__text { position: relative; color: #113a87; padding: 5px 15px; font-size: 14px; font-weight: bold; font-family: "PTSansRegular", sans-serif; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; cursor: pointer; border: 1px solid #cccccc; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+  .drop .drop__text:before { position: absolute; content: ""; right: 8px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); width: 0px; height: 0px; border-style: solid; border-width: 5px 5px 0 5px; border-color: black transparent transparent transparent; }
+  .head_h { margin-bottom: 30px; height: auto; }
+  .head_h .hi_r { display: none; }
+  .head_h .hi_c { padding: 15px 0; height: auto; font-size: 42px; }
+  .breadcrumb-navigation { display: none; }
+  .center_col { width: auto; }
+  .center_col ul.tab_headers { padding: 0; margin: 10px 0; }
+  .center_col ul.tab_headers li + li { margin-left: 3px; } }
+@media only screen and (max-width: 767px) { .head { padding-top: 12px; height: 166px; }
+  .head .logo { margin-left: 12px; }
   .h_menu { right: auto; left: 0; top: 70px; }
   .h_menu table td a { text-align: left; }
   .whi_mainbanner, .search { display: none; }
-  .h_link { top: 96px; right: 92px; }
-  .lang { top: 27px; right: 27px; }
-  .btn-munu { top: 87px; left: 31px; right: auto; }
+  .h_link { top: 86px; right: 74px; }
+  .lang { top: 16px; right: 9px; }
+  .btn-munu { top: 78px; left: 30px; right: auto; }
   .center { padding: 0 12px 92px; }
   .center h6 { margin-bottom: 15px; font-size: 12px; }
   .center h3 { padding: 0; margin: 15px 0; }
@@ -101,4 +119,12 @@ body.is-open-menu .h_menu { z-index: 2; display: block; }
   .footer .f_menu { -webkit-order: 1; order: 1; line-height: 1.4; }
   .footer .f_menu a { margin-left: 4px; }
   .footer .f_menu a:first-child { margin-left: 0; }
-  .footer .warning { margin: 18px 0; order: 2; -webkit-order: 2; } }
+  .footer .warning { margin: 18px 0; order: 2; -webkit-order: 2; }
+  .global { padding: 0 15px; }
+  .center_col { float: none; }
+  .center_col h1 { padding: 10px 0 15px; }
+  .head_h .hi_c { background-size: cover; }
+  .center_col ul.tab_headers li { margin-top: 5px; float: none; display: block; }
+  .center_col ul.tab_headers li:first-child { margin-top: 0; }
+  table td, table.white td { padding: 0; display: block; }
+  table img, table.white img { width: 100%; display: block; } }

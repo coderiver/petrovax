@@ -74,6 +74,9 @@ body
 	.btn-munu__ico
 		margin-left: -11px
 
+.drop
+	display: none
+
 +r(1024)
 	.head,
 	.center,
@@ -292,6 +295,8 @@ body
 			height: auto
 			font-size: 11px
 			color: #fff
+			p
+				margin: 0
 	.f_menu
 		a
 			margin: 0 0 0 29px
@@ -304,12 +309,79 @@ body
 		width: 160px
 	.copy_r
 		width: 160px
+	.global
+		margin: 0 auto
+		width: auto
+		max-width: 700px
+	.l_menu
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		padding: 5px
+		width: auto
+		background: #fff
+		border: 1px solid #ccc
+		border-top: none
+		+border-radius(0 0 6px 6px)
+		display: none
+	.drop
+		position: relative
+		margin-bottom: 10px
+		display: block
+		&.is-open
+			.l_menu
+				display: block
+			.drop__text
+				+border-radius(6px 6px 0 0)
+				&:before
+					margin-top: -2px
+					+rotate(180)
+		.drop__text
+			position: relative
+			color: #113a87
+			padding: 5px 15px
+			font-size: 14px
+			font-weight: bold
+			font-family: 'PTSansRegular', sans-serif
+			text-overflow: ellipsis
+			overflow: hidden
+			white-space: nowrap
+			cursor: pointer
+			border: 1px solid #ccc
+			+border-radius(6px)
+			&:before
+				position: absolute
+				content: ''
+				right: 8px
+				top: 50%
+				+translate(0,-50%)
+				+arr(10,5,#000,b)
+	.head_h
+		margin-bottom: 30px
+		height: auto
+		.hi_r
+			display: none
+		.hi_c
+			padding: 15px 0
+			height: auto
+			font-size: 42px
+	.breadcrumb-navigation
+		display: none
+	.center_col
+		width: auto
+		ul.tab_headers
+			padding: 0
+			margin: 10px 0
+	.center_col ul.tab_headers li+li
+		margin-left: 3px
 
 +r(767)
-	.logo
-		margin-left: 12px
 	.head
+		padding-top: 12px
 		height: 166px
+		.logo
+			margin-left: 12px
 	.h_menu
 		right: auto
 		left: 0
@@ -322,14 +394,14 @@ body
 	.search
 		display: none
 	.h_link
-		top: 96px
-		right: 92px
+		top: 86px
+		right: 74px
 	.lang
-		top: 27px
-		right: 27px
+		top: 16px
+		right: 9px
 	.btn-munu
-		top: 87px
-		left: 31px
+		top: 78px
+		left: 30px
 		right: auto
 	.center
 		padding: 0 12px 92px
@@ -440,7 +512,28 @@ body
 			margin: 18px 0
 			order: 2
 			-webkit-order: 2
-
+	.global
+		padding: 0 15px
+	.center_col
+		float: none
+		h1
+			padding: 10px 0 15px
+	.head_h .hi_c
+		background-size: cover
+	.center_col ul.tab_headers li
+		margin-top: 5px
+		float: none
+		display: block
+		&:first-child
+			margin-top: 0
+	table,
+	table.white
+		td
+			padding: 0
+			display: block
+		img
+			width: 100%
+			display: block
 
 
 
