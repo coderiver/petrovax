@@ -96,7 +96,8 @@ body
 	body
 		overflow-x: hidden
 	img
-		width: 100%
+		width: auto
+		max-width: 100%
 	.head,
 	.center
 		max-width: 700px
@@ -301,8 +302,9 @@ body
 			p
 				margin: 0
 	.f_menu
+		margin-bottom: 10px
 		a
-			margin: 0 0 0 29px
+			margin: 0 0 0 18px
 			&:first-child
 				margin-left: 0
 	.create
@@ -325,7 +327,7 @@ body
 		right: 0
 		padding: 5px
 		width: auto
-		z-index: 2
+		z-index: 200
 		float: none
 		border: 1px solid #ccc
 		border-top: none
@@ -348,6 +350,7 @@ body
 			position: relative
 			color: #113a87
 			padding: 5px 15px
+			height: 17px
 			font-size: 14px
 			font-weight: bold
 			font-family: 'PTSansRegular', sans-serif
@@ -382,6 +385,8 @@ body
 			margin: 10px 0
 	.center_col ul.tab_headers li+li
 		margin-left: 3px
+	.center_col ul.tab_headers li
+		font-size: 13px
 	.par_carusel div
 		width: auto !important
 	.par_carusel
@@ -403,8 +408,32 @@ body
 		width: 100%
 	.prod_inf .tab_content
 		margin-bottom: 20px
-	.p_img
+	.prod_inf .p_img
 		height: auto
+		background: none
+	.mf-captcha
+		img
+			width: auto
+	.press-kit form input[type=text]
+		width: 175px !important
+	.par_carusel a.pc_r
+		z-index: 20
+	.par_carusel.press-kit-carisel ul li
+		margin: 0 30px 0 60px
+	.press-kit
+		table
+			img
+				width: auto
+				max-width: 100%
+	.prod_inf
+		float: none
+	.center_col .photos-list li
+		width: 128px !important
+	.global .center_col ul.video-list li
+		margin: 0 0 0 1.2%
+		width: 19%
+		&:first-child
+			margin-left: 0
 
 +r(767)
 	.head
@@ -502,7 +531,6 @@ body
 	.c_ul_txt li .c_txt_1 li ul li img
 		margin: 15px 0
 		float: none
-		width: 100%
 	.list_drg
 		li,
 		.list_drg li:first-child
@@ -536,9 +564,11 @@ body
 			order: 1
 			line-height: 1.4
 			a
-				margin-left: 4px
+				margin-left: 3px
 				&:first-child
 					margin-left: 0
+				&.selected
+					padding: 2px
 		.warning
 			margin: 18px 0
 			order: 2
@@ -557,13 +587,17 @@ body
 		display: block
 		&:first-child
 			margin-top: 0
+	.center_col ul.tab_headers li
+		margin-left: 0 !important
+		float: none !important
+		height: auto !important
 	table,
 	table.white
 		td
 			padding: 0
+			width: 100% !important
 			display: block
 		img
-			width: 100%
 			display: block
 	.partner_all1
 		float: none
@@ -592,7 +626,6 @@ body
 			margin: 0 0 17px 
 			padding: 9px
 			height: auto
-			background-size: cover
 			+box
 	.prod_inf .pinf_menu a
 		margin: 0
@@ -606,15 +639,66 @@ body
 		width: auto !important
 	.fancybox-inner
 		width: 100% !important
-
-
-
-
-
-
-
-
-
+	.feedback input.inputtext, .feedback textarea
+		width: 100%
+		+box
+	.press-kit
+		table
+			td
+				padding-left: 0 !important
+				width: 100%
+	.press-kit form input[type=text]
+		width: 120px !important
+	.par_carusel.press-kit-carisel ul li
+		margin: 0 35px 0 0
+	h3.slogan
+		font-size: 30px !important
+	.faq
+		float: none
+		width: auto
+		.faqqui,
+		.faqqui1
+			float: none
+			padding-left: 0
+		.faqqui li,
+		.faqqui1 li
+			width: auto
+	.faq_aside_column a.faq
+		display: block
+	.safety_form_column
+		margin-right: 0
+		float: none
+		width: auto
+	.send_form .sf_c fieldset
+		margin: 0 0 0 1em
+	.send_form .sf_c .txta, .send_form .sf_c .inputtextarea,
+	.send_form .sf_c .in, .send_form .sf_c .inputtext,
+	.send_form .sf_c .st, .send_form .sf_c .inputselect
+		width: 100%
+		+box
+	table.cpolicy,
+	.career_slogans
+		width: 100% !important
+	table.cpolicy td+td
+		padding-left: 0 !important
+	.career_slogans
+		display: none
+	.career_policy section.contacts div.contacts
+		float: none
+		width: auto
+	table.white td
+		padding: 5px 0 !important
+	.press-kit-carisel
+		overflow: hidden
+	.center_col .photos-list li
+		float: none !important
+		width: auto !important
+		text-align: center !important
+		a
+			display: inline-block !important
+	.global .center_col ul.video-list li
+		margin: 0
+		width: 100%
 
 
 
