@@ -77,6 +77,12 @@ body
 .drop
 	display: none
 
+.mob-show
+	display: none
+
+.top-section-name
+	display: none
+
 +r(1024)
 	.head,
 	.center,
@@ -98,6 +104,12 @@ body
 	img
 		width: auto
 		max-width: 100%
+		min-width: 150px
+	.top-section-name
+		padding: 0 0 10px
+		font-size: 35px
+		font-weight: bold
+		display: block
 	.head,
 	.center
 		max-width: 700px
@@ -248,6 +260,13 @@ body
 		margin-top: -20px
 		padding-right: 0
 		font-size: 0
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-flex-flow: row wrap
+		flex-flow: row wrap
 		li
 			float: none
 			margin: 20px 0 0
@@ -262,12 +281,16 @@ body
 				margin-top: 20px
 				width: 48%
 				height: auto
+				-webkit-order: 4
+				order: 4
 				a
 					display: block
 			h1
 				padding-left: 0
 			span
 				margin-left: -10px
+				img
+					min-width: 100px !important
 	.footer
 		position: relative
 		padding: 0
@@ -434,8 +457,45 @@ body
 		width: 19%
 		&:first-child
 			margin-left: 0
+	.center_col .mob-nav
+		margin-bottom: 10px 
+		li
+			margin: 10px 10px 0 0
+			padding: 0
+			display: inline-block
+			background: none
+		sup
+			bottom: auto
+	.career_slogans
+		width: 700px !important
+		li
+			width: 646px !important
+	.photos-list li .preview a img
+		min-width: 0 !important
+	.center_col .photos-list h3 a
+		font-size: 12px
+	ul.video-list li h3 a
+		font-size: 11px
+	.fieldblock img
+		min-width: 0 !important
+		width: auto !important
+	.table-contacts
+		.td-img-zoom
+			width: auto !important
+			min-width: 59px !important
+		.mob-hide
+			display: block
+	.mob-hide
+		display: none
+
+	.center_col ul.team li img
+		min-width: 0 !important
+	.breadcrumb-navigation + h1
+		display: none
 
 +r(767)
+	img
+		min-width: auto
 	.head
 		padding-top: 12px
 		height: 120px
@@ -463,6 +523,7 @@ body
 		top: 78px
 		left: 30px
 		right: auto
+		width: 30px
 	.center
 		padding: 0 12px 92px
 		h6
@@ -527,7 +588,8 @@ body
 		display: block
 	.c_ul_txt li .c_txt_1 li ul li:first-child
 		img
-			margin-top: 5px
+			margin: 5px 0
+			width: 100%
 	.c_ul_txt li .c_txt_1 li ul li img
 		margin: 15px 0
 		float: none
@@ -582,15 +644,15 @@ body
 	.head_h 
 		display: none
 	.center_col ul.tab_headers li
-		margin-top: 5px
-		float: none
-		display: block
-		&:first-child
-			margin-top: 0
-	.center_col ul.tab_headers li
-		margin-left: 0 !important
+		margin: 10px 0 !important
 		float: none !important
 		height: auto !important
+		line-height: 1.4 !important
+		display: inline-block
+		&:first-child
+			margin-top: 0
+	.center_col ul.tab_headers 
+		margin-top: 10px
 	table,
 	table.white
 		td
@@ -599,6 +661,18 @@ body
 			display: block
 		img
 			display: block
+	table.videomaterial
+		display: block
+		tr, tbody, td
+			display: block
+			width: 100%
+		.movie
+			> div,
+			> div > div,
+			video,
+			> div + div,
+			> div + div > div
+				width: 100% !important
 	.partner_all1
 		float: none
 	.par_carusel ul li
@@ -615,10 +689,8 @@ body
 		float: none
 		padding: 0 0 5px 0
 		width: 100%
-		text-align: center
 		height: auto
-		img
-			float: none
+		+clr
 	.prod_inf 
 		.tab_content
 			width: 100%
@@ -640,7 +712,7 @@ body
 	.fancybox-inner
 		width: 100% !important
 	.feedback input.inputtext, .feedback textarea
-		width: 100%
+		width: 100% !important
 		+box
 	.press-kit
 		table
@@ -693,13 +765,61 @@ body
 	.center_col .photos-list li
 		float: none !important
 		width: auto !important
-		text-align: center !important
+		margin-left: 0 !important
 		a
 			display: inline-block !important
 	.global .center_col ul.video-list li
 		margin: 0
 		width: 100%
-
+	.table-contacts
+		.pt10
+			padding-top: 10px
+		img
+			width: 100%
+		.ymaps-map
+			width: 100% !important
+		.td-map > ymaps
+			width: 100% !important
+		.mob-show
+			padding: 10px 0
+			&.mob-show_mod
+				padding-top: 0px
+		.mob-hide
+			display: none
+	.mob-show
+		display: block
+	.news-detail
+		> div,
+		> div > div,
+		video,
+		> div + div,
+		> div + div > div
+			width: 100% !important
+	.glossary 
+		dt
+			margin-bottom: 6px
+			width: 100%
+		dd
+			overflow: visible
+	table.history
+		tbody,
+		tr
+			display: block
+	.photos-list li .preview a
+		height: auto !important
+	.par_carusel ul li 
+		img
+			min-width: 0 !important
+			height: auto !important
+		a
+			min-height: 70px !important
+	.center_col ul.partner li
+		&:first-child
+			margin-bottom: 20px
+	.par_carusel a.pc_r,
+	.par_carusel a.pc_l
+		top: 50%
+		margin-top: -16px
 
 
 
